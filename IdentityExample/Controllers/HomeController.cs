@@ -63,7 +63,7 @@ namespace IdentityExample.Controllers
             var user = new IdentityUser
             {
                 UserName = username,
-                Email = ""
+                Email = $"{username}@fmail.com"
             };
 
             var result = await _userManager.CreateAsync(user, password);
